@@ -1,0 +1,25 @@
+# requirements_phase2.txt — PashuMitra Phase 2
+
+# Phase 1 (carry forward)
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-dotenv>=1.0.0
+sqlalchemy>=2.0.0
+requests>=2.31.0
+Pillow>=10.0.0
+flet>=0.23.0
+
+# Phase 2 — NEW
+apscheduler>=3.10.0          # Task scheduler for reminders
+redis>=5.0.0                 # Redis client (optional — falls back gracefully)
+anthropic>=0.25.0            # Claude API for advanced diagnoses
+openai>=1.30.0               # GPT-4 / Whisper API fallback
+pydantic>=2.7.0              # Request/response schemas
+python-multipart>=0.0.9      # File upload support
+aiofiles>=23.0.0             # Async file handling
+twilio>=9.0.0                # SMS fallback (optional)
+flet-charts>=0.84.0          # Dashboard charts
+
+# Voice (optional — heavy, install separately)
+# openai-whisper>=20231117
+# torch>=2.0.0
